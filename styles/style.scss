@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+//   font-size: 16px;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("../img/backgrounds/background.webp");
+  background-repeat: repeat;
+  min-width: 400px;
+  font-size: 16px;
+}
+
+@import "navbar";
+@import "section-1";
+@import "section-2";
+@import "section-3";
+@import "carousel";
+@import "section-4";
+@import "section-5";
+@import "section-6";
+@import "footer";
