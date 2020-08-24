@@ -2,23 +2,27 @@
   width:100%;
   text-align: center;
   background-color: white;
+  color: #1b1b1f;
   .footer-container{
     width: 80vw; 
     margin: 0 auto;
-    height: 250px;
+    min-height: 250px;
     @media screen and (max-width: 1020px) {
       width: 90vw;
-      height: 50vh;
+      // height: 55vh;
     }
     .flex-1{
       display: flex;
       flex-direction: row;
-      height: 80%;
+      padding-top: 32px;
+      padding-bottom: 32px; //because adding padding to only the top part didn't keep the title in the center, it shifted it downwards.
+      height: 200px;
       align-items: center;
       @media screen and (max-width: 1020px) {
         display: flex;
         flex-direction: column;
         height: 60%;
+        padding-bottom: 0;
       }
       .flex-2{
         display: flex;
@@ -39,49 +43,26 @@
         }
 
       }
-      .flex-3{
-        display: flex;
-        @media screen and (max-width: 1020px) {
-          display: none;
-        }
+      .flex-3 {
         width: 40%;
-        height: 70%;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        font-size: 1.5rem;
-        div {
-          text-align: start;
-          height: 70%;
-          ul {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            li{
-              font-family: Poppins,sans-serif;
-              font-size: 1.5vh;
-              line-height: 2.5vh;
-            }
-          }
+        // height: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 2em 0;
+        p {
+          text-align: left;
+          padding: 5px;
         }
-      }
-      .flex-3-small {
-        display: none;
-        height: 70%;
+        // grid-template-rows: 1fr 1fr 1fr;
         @media screen and (max-width: 1020px) {
-          display: flex;
-          flex-direction: column;
-          ul {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            li {
-              padding: 5px 0;
-            }
+          grid-template-columns: 1fr;
+          p {
+            text-align: center;
           }
         }
+        
       }
     }
     .flex-container{
@@ -89,7 +70,8 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      height: 20%;
+      height: 50px;
+      padding: 12px 0;
       @media screen and (max-width: 1020px) {
         flex-direction: column;
         height: 40%;
@@ -132,6 +114,7 @@
           flex-direction: row;
           width: 50%;
           height: 40%;
+          padding: 5px 0;
         }
         @media screen and (max-width: 799px) {
           width: 80%;

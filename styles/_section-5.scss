@@ -1,4 +1,4 @@
-.section-5 {
+.section:nth-child(6){
   display: flex;
   min-height: 80vh; // set according to the design
   // background: rgba($color: #ffffff, $alpha: 0.05); // uncomment where overlay is required
@@ -9,6 +9,8 @@
   background-size: 35%, 7%;
   background-position-y: center, 5%;
   background-position-x: 65%, 85%;
+  padding-top: 80px;
+  padding-bottom: 80px;
   @media screen and (max-width: 799px) {
     background: none;
   }

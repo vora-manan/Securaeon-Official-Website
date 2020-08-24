@@ -1,4 +1,4 @@
-.section-2nd{
+.section:nth-child(3){
     font-family: "Poppins";
     width: 100%;
     height: fit-content;
@@ -7,16 +7,20 @@
     background-repeat: no-repeat;
     background-position-y: center, 80%;
     background-position-x: 20%, 70%;
-    @media screen and (max-width: 799px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 750px;
+    @media screen and (max-width: 1020px) {
+        height: fit-content;
         background: none;
         background: rgba($color: #ffffff, $alpha: 0.05);
+        .container-2nd {
+            width: 90%;
+        }
     }
     .container-2nd{
-        padding: 5% 10%;
-        height: 672px;
-        @media screen and (max-width: 799px) {
-            height: fit-content;
-        }
+        width: 80%;
+        margin: 0 auto;
         .heading-2nd{
             display: flex;
             justify-content: center;
@@ -26,6 +30,8 @@
                 line-height: 4.3rem;
                 font-weight: 500;
                 text-align: center;
+                opacity: 0.95;
+                padding-top: 0px;
             }
             
         }
@@ -35,35 +41,38 @@
             display: flex;
             flex-wrap: wrap;
             height: fit-content;
+            width: 100%;
+            justify-content: space-between;
             .icon-box{
                 padding: 0% 5%;
                 flex: 33.3%;
                 text-align: center;
+                min-width: 260px;
+                max-width: 415px;
                 img{
-                    height: 146px;
+                    height: 140px;
+                    opacity: 0.9;
                 }
                 h5{
                     color: white;
                     font-size: 1.4rem;
                     line-height: 2.1rem;
                     font-weight: 200;
-                    @media screen and (max-width: 777px) {
-                        padding: 2% 0;
-                    }
+                    opacity: 0.95;
                 }
                 p{
                     font-size:1rem;
                     line-height: 1.6rem;
-                    color: #8f8f8f;
-                }
-                @media screen and (max-width: 777px){
-                    flex-direction: column;
-                    padding: 12% 0;
+                    color: #ffffff;
+                    opacity: 0.6;
                 }
             }
-            @media screen and (max-width: 777px) 
-            {
+            @media screen and (max-width: 1020px) {
                 flex-direction: column;
+                align-items: center;
+                .icon-box {
+                    padding: 10% 0;
+                }
             }
         }
     }
